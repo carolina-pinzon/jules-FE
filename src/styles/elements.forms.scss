@@ -1,16 +1,41 @@
 input,
 textarea,
-button,
 select {
   background: none;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   line-height: normal;
-  border: 0;
+  border: 1px solid black;
   border-radius: 0;
   box-shadow: none;
   appearance: none;
+}
+
+input {
+  width: 100%;
+  font-size: var(--font-size);
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+button {
+  box-shadow: inset 0 0 0 .4rem var(--color-shadow),0 .4rem 0 0 #e7e6e4;
+  --color-main: #e37ad3;
+  --color-shadow: #d850b1;
+  background-color: var(--color-main);
+  color: #fff;
+  font-weight: 500;
+  border: .2rem solid #0b0b0b;
+  -webkit-box-shadow: inset 0 0 0 .3rem var(--color-shadow);
+  box-shadow: inset 0 0 0 .3rem var(--color-shadow);
+  border: 0;
 }
 
 input[type="radio"] {
@@ -23,4 +48,25 @@ input[type="checkbox"] {
 
 button {
   cursor: pointer;
+}
+
+.KittyMonster {
+  display: inline-block;
+
+  img {
+    width: 250px;
+    border-radius: 1rem;
+  }
+
+  &--kitty1 {
+    img {
+      background-color: #c5eefa;
+    }
+  }
+
+  &--kitty2 {
+    img {
+      background-color: #fde9e4;
+    }
+  }
 }

@@ -9,12 +9,10 @@ import Footer from 'components/Footer/Footer.jsx';
 function AppView() {
   return (
     <div>
-      <Header />
       <Main>
         <Route exact path="/" component={HomeView} />
-        <Route exact path="/counter" component={CounterView} />
+        <Route exact path="/fight" component={CounterView} />
       </Main>
-      <Footer />
     </div>
   );
 }

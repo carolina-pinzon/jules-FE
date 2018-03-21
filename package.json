@@ -76,6 +76,7 @@
     "stylelint": "^8.4.0",
     "stylelint-scss": "^2.2.0",
     "stylelint-webpack-plugin": "^0.10.1",
+    "web": "^0.0.2",
     "webpack": "3.11.0",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
